@@ -40,7 +40,7 @@ Create all needed folders first
 
 
   1. Edit yaml file
-  2. Run a .py file in cmd or all of them via Cron
+  2. Run a .py file in cmd or all of them via Cron, use --help to see all possible arguments
   
 
 
