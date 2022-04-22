@@ -32,11 +32,13 @@ Attention:
   - Script might fail trying to connect to some devices ,especially when connecting to more than 20 devices simultaneously in a thread.
   - Script worked fine and was tested in one Enterprise network environment only, and some templates were edited to work in that environment!
 
+Instructions:
+
 Create all needed folders first
 
 ![image](https://user-images.githubusercontent.com/101651215/164753440-fe977c92-1498-419a-8300-90f3f0dc2fdb.png)
 
-Instructions:
+
   1. Edit yaml file
   2. Run a .py file in cmd or all of them via Cron
   
