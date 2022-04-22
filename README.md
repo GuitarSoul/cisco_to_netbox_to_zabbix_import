@@ -1,7 +1,8 @@
 # (Cisco + ESXI VM) -> Netbox -> Zabbix
 
-Netbox 3.2 +
-Zabbix 6 +
+Tested on Netbox 3.2 +
+
+Tested on Zabbix 6 +
 
 Cisco Devices:
   - Script uses "confluence url page" or "txt file in the same folder" to get ip list to connect
