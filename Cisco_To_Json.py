@@ -588,17 +588,6 @@ def parse_output_textfsm(list_of_command_output, dic_index):
                         elif name in dev_type:
                             device_role = 'switch_layer_3'
                             break
-                # For DZR switches
-                if 'DZR' in device['hostname']:
-                    device_role = device_role + '_dzr'
-                # For Netbox and Zabbix Integration. Some switches have only Servers connected to access ports and in Zabbix there is certain Template for it.
-                with open('COD_SW.txt', 'r') as f:
-                    switches_cod_list = re.findall('\S+', f.read())
-                if device['hostname'] in switches_cod_list:
-                    device_role = 'switch_cod'
-                if 'MSKIX77-MGMTSW' in device['hostname']:
-                    device_role = 'switch_smb_cod'
-
                 return device_role
             device_role = device_role_parse()
 
