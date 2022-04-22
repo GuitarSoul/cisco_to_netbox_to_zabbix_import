@@ -22,6 +22,7 @@ Details:
 To run the script once a day in a background just add this line to crontab file: 
   - 0 0 * * * (cd /path_to_script_folder && env/bin/python Cisco_To_Json.py -f confluence && env/bin/python Cisco_To_Netbox.py -l all && env/bin/python Netbox_To_Zabbix.py ) > /path_to_log_folder/Cron_Logs.txt
   - Script Cisco_To_Json.py -f confluence
+
 Attention:
   - Script Cisco_To_Netbox uses custom fields, you must add these fields to write acl information
 
