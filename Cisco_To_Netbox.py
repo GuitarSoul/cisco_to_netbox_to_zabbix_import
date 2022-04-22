@@ -43,7 +43,6 @@ def logs_and_debug(debug_flag):
 
 
 def create_or_update_vm_noc():
-    # Specific to Tricolor. Creating\Updating NOC Servers Within ELS 667 VLAN
     from pyVim.connect import SmartConnect, SmartConnectNoSSL, Disconnect, vmodl, vim
     import ssl, logging, re
     import pynetbox
@@ -51,7 +50,6 @@ def create_or_update_vm_noc():
     import dns, dns.resolver, dns.rdataclass, dns.rdatatype
     from pprint import pprint
 
-    # Gathering Info From mv-vc-off-01.nsc.ru
     c = SmartConnectNoSSL(host=config['esxi.url'], user=config['esxi.username'], pwd=config['esxi.password'])
     datacenter = c.content.rootFolder.childEntity[0]
     noc_folder = datacenter.vmFolder.childEntity[0]
@@ -391,8 +389,7 @@ def create_or_update_device(device_api_file_name):
                         dot1q_sub_interface = 'NONE'
                         pass
                     if prefix_get:
-                        if ('Vlan' or dot1q_sub_interface in ip_get.assigned_object.name) and ('ASW' not in ip_get.assigned_object.device.name or ('DZR' in ip_get.assigned_object.device.name or 'OTT-Stack' in
-                                                                                                                                                   ip_get.assigned_object.device.name)):
+                        if ('Vlan' or dot1q_sub_interface in ip_get.assigned_object.name) and ('ASW' not in ip_get.assigned_object.device.name):
                             description_devices = str(' ----- [Devices] : "' + ip_get.assigned_object.device.name + '"')
                             if dot1q_sub_interface != 'NONE':
                                 description_vlan = f'[VLAN] : "Vlan{dot1q_sub_interface}"'
@@ -677,20 +674,6 @@ def create_or_update_device(device_api_file_name):
         # Assign primary IP to a device
         # Unfortunately each device can have different management interface name and its impossible to create dependencies between device role and its management interface name
         management_interface_name = None
-
-        if 'GOD-ASW' in name and 'TD' not in name:
-            management_interface_name = 'Vlan1000'
-        if 'GOD-ASW-TD' in name:
-            management_interface_name = 'Vlan7'
-        if 'ELS-ASW' in name:
-            management_interface_name = 'Vlan77'
-        if 'REN-ASW' in name:
-            management_interface_name = 'Vlan211'
-        if 'IRK-ASW' in name:
-            management_interface_name = 'Vlan139'
-        if 'N6-CC-ASW' in name or 'MSKIX77-MGMTSW' in name:
-            management_interface_name = 'mgmt'
-
         if management_interface_name is not None:
             try:
                 device_management_interface = nb.dcim.interfaces.get(device_id=device_get.id, name=management_interface_name)
