@@ -1,6 +1,6 @@
 #Confluence 
 confluence.username: 'netbox'
-confluence.username: 'netbox'
+confluence.password: 'netbox'
 confluence.url: 'http://confluence.tricolor.tv:8090'
 confluence.pageid: '76159999'
 ################################################################################
