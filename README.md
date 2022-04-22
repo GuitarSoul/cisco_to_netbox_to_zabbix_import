@@ -6,7 +6,7 @@ Zabbix 6 +
 Cisco Devices:
   - Script uses "confluence url page" or "txt file in the same folser" to get ip list to connect
   - Script gathers all needed info by ssh
-  - Parses data and writes into api/"device_name".csv files in json format
+  - Parses data and writes into api/"device_name".csv files in json format (Some examples are in api folder)
   - Creates entities in Netbox (devices, interfaces, prefixes, ip addresses, vlans, cdp connections, inventory)
   - Zabbix script goes through all devices and creates/updates hosts on Zabbix server
 ESXI VM:
