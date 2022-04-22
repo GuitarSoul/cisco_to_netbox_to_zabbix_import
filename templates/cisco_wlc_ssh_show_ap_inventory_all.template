@@ -1,0 +1,10 @@
+Value AP_NAME (.*)
+Value MODEL (\S+)
+Value PLATFORM (.*)
+Value SN (\w+)
+
+Start
+  ^Inventory\s+for\s+\S+$$ -> Continue.Record
+  ^Inventory\s+for\s+${AP_NAME}$$
+  ^NAME:\s+"${MODEL}"\s+,\s+DESCR:\s+"${PLATFORM}"$$
+  ^PID:\s+[\w\-]+,\s*VID:\s+\w+,\s*SN:\s+${SN}$$

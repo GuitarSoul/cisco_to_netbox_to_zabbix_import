@@ -1,0 +1,675 @@
+[
+                {
+                                "AP": [
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.53"
+                                                                ],
+                                                                "AP_MAC": "00:62:ec:8e:db:a0",
+                                                                "AP_MODEL": "AIR-CAP3702I-R-K9",
+                                                                "AP_NAME": "Conference_Room_108",
+                                                                "AP_PLATFORM": "Cisco Aironet 3700 Series (IEEE 802.11ac) Access Point",
+                                                                "AP_SN": "JTV2029A01P"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.33"
+                                                                ],
+                                                                "AP_MAC": "a0:23:9f:67:0a:66",
+                                                                "AP_MODEL": "AIR-AP2802I-R-K9",
+                                                                "AP_NAME": "Reception",
+                                                                "AP_PLATFORM": "Cisco Aironet 2800 Series (IEEE 802.11ac) Access Point",
+                                                                "AP_SN": "JTV2142A0VJ"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.10"
+                                                                ],
+                                                                "AP_MAC": "70:df:2f:8e:22:60",
+                                                                "AP_MODEL": "AIR-AP2802I-R-K9",
+                                                                "AP_NAME": "112_Dokumentooborot",
+                                                                "AP_PLATFORM": "Cisco Aironet 2800 Series (IEEE 802.11ac) Access Point",
+                                                                "AP_SN": "JTV2142A0VQ"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.65"
+                                                                ],
+                                                                "AP_MAC": "00:62:ec:a1:62:ec",
+                                                                "AP_MODEL": "AIR-CAP3702I-R-K9",
+                                                                "AP_NAME": "717_GD",
+                                                                "AP_PLATFORM": "Cisco Aironet 3700 Series (IEEE 802.11ac) Access Point",
+                                                                "AP_SN": "JTV2029A01K"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.59"
+                                                                ],
+                                                                "AP_MAC": "00:62:ec:8f:b3:b8",
+                                                                "AP_MODEL": "AIR-CAP3702I-R-K9",
+                                                                "AP_NAME": "716_Big_Conference_Room",
+                                                                "AP_PLATFORM": "Cisco Aironet 3700 Series (IEEE 802.11ac) Access Point",
+                                                                "AP_SN": "JTV2029A01M"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.3"
+                                                                ],
+                                                                "AP_MAC": "70:df:2f:6d:6b:e2",
+                                                                "AP_MODEL": "AIR-AP2802I-R-K9",
+                                                                "AP_NAME": "604",
+                                                                "AP_PLATFORM": "Cisco Aironet 2800 Series (IEEE 802.11ac) Access Point",
+                                                                "AP_SN": "JTV2142A0VM"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.63"
+                                                                ],
+                                                                "AP_MAC": "c0:8c:60:6b:28:df",
+                                                                "AP_MODEL": "AIR-CAP1602I-R-K9",
+                                                                "AP_NAME": "601A_Buhi",
+                                                                "AP_PLATFORM": "Cisco Aironet 1600 Series (IEEE 802.11n) Access Point",
+                                                                "AP_SN": "FGL1734W3X2"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.30"
+                                                                ],
+                                                                "AP_MAC": "70:df:2f:8e:22:62",
+                                                                "AP_MODEL": "AIR-AP2802I-R-K9",
+                                                                "AP_NAME": "317_Habarov_Side",
+                                                                "AP_PLATFORM": "Cisco Aironet 2800 Series (IEEE 802.11ac) Access Point",
+                                                                "AP_SN": "JTV2142A0VN"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.55"
+                                                                ],
+                                                                "AP_MAC": "bc:16:65:78:0e:d9",
+                                                                "AP_MODEL": "AIR-CAP1602I-R-K9",
+                                                                "AP_NAME": "307_DZR",
+                                                                "AP_PLATFORM": "Cisco Aironet 1600 Series (IEEE 802.11n) Access Point",
+                                                                "AP_SN": "FGL1734W3VW"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.71"
+                                                                ],
+                                                                "AP_MAC": "a8:0c:0d:e7:2e:ae",
+                                                                "AP_MODEL": "AIR-CAP2602I-R-K9",
+                                                                "AP_NAME": "308_Lawyers",
+                                                                "AP_PLATFORM": "Cisco Aironet 2600 Series (IEEE 802.11n) Access Point",
+                                                                "AP_SN": "JTV1803A0KC"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.52"
+                                                                ],
+                                                                "AP_MAC": "a8:0c:0d:e7:2e:9d",
+                                                                "AP_MODEL": "AIR-CAP2602I-R-K9",
+                                                                "AP_NAME": "317_Gorohova_Side",
+                                                                "AP_PLATFORM": "Cisco Aironet 2600 Series (IEEE 802.11n) Access Point",
+                                                                "AP_SN": "JTV1803A0KA"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.57"
+                                                                ],
+                                                                "AP_MAC": "00:62:ec:92:d5:50",
+                                                                "AP_MODEL": "AIR-CAP3702I-R-K9",
+                                                                "AP_NAME": "301_Sigalov_Side",
+                                                                "AP_PLATFORM": "Cisco Aironet 3700 Series (IEEE 802.11ac) Access Point",
+                                                                "AP_SN": "JTV2029A01H"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.31"
+                                                                ],
+                                                                "AP_MAC": "a0:23:9f:67:0a:6a",
+                                                                "AP_MODEL": "AIR-AP2802I-R-K9",
+                                                                "AP_NAME": "413_Hitrik",
+                                                                "AP_PLATFORM": "Cisco Aironet 2800 Series (IEEE 802.11ac) Access Point",
+                                                                "AP_SN": "JTV2142A0VR"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.12"
+                                                                ],
+                                                                "AP_MAC": "70:df:2f:8e:23:62",
+                                                                "AP_MODEL": "AIR-AP2802I-R-K9",
+                                                                "AP_NAME": "401_Content_Side",
+                                                                "AP_PLATFORM": "Cisco Aironet 2800 Series (IEEE 802.11ac) Access Point",
+                                                                "AP_SN": "JTV2142A0DS"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.7"
+                                                                ],
+                                                                "AP_MAC": "70:df:2f:8e:22:68",
+                                                                "AP_MODEL": "AIR-AP2802I-R-K9",
+                                                                "AP_NAME": "401_Krivonosov_Side",
+                                                                "AP_PLATFORM": "Cisco Aironet 2800 Series (IEEE 802.11ac) Access Point",
+                                                                "AP_SN": "JTV2142A0VW"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.67"
+                                                                ],
+                                                                "AP_MAC": "e0:0e:da:eb:a2:88",
+                                                                "AP_MODEL": "AIR-CAP3702I-R-K9",
+                                                                "AP_NAME": "408",
+                                                                "AP_PLATFORM": "Cisco Aironet 3700 Series (IEEE 802.11ac) Access Point",
+                                                                "AP_SN": "JTV2029A01N"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.60"
+                                                                ],
+                                                                "AP_MAC": "88:5a:92:c4:13:da",
+                                                                "AP_MODEL": "AIR-CAP1602I-R-K9",
+                                                                "AP_NAME": "403_HR",
+                                                                "AP_PLATFORM": "Cisco Aironet 1600 Series (IEEE 802.11n) Access Point",
+                                                                "AP_SN": "FGL1744W0SD"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.62"
+                                                                ],
+                                                                "AP_MAC": "f8:72:ea:7c:71:f8",
+                                                                "AP_MODEL": "AIR-CAP1602I-R-K9",
+                                                                "AP_NAME": "5th_floor_hall_right",
+                                                                "AP_PLATFORM": "Cisco Aironet 1600 Series (IEEE 802.11n) Access Point",
+                                                                "AP_SN": "FGL1723W0EA"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.69"
+                                                                ],
+                                                                "AP_MAC": "3c:08:f6:22:7e:92",
+                                                                "AP_MODEL": "AIR-CAP1602I-R-K9",
+                                                                "AP_NAME": "501",
+                                                                "AP_PLATFORM": "Cisco Aironet 1600 Series (IEEE 802.11n) Access Point",
+                                                                "AP_SN": "JTV1808A02T"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.66"
+                                                                ],
+                                                                "AP_MAC": "3c:08:f6:8a:3a:c5",
+                                                                "AP_MODEL": "AIR-CAP2602I-R-K9",
+                                                                "AP_NAME": "512",
+                                                                "AP_PLATFORM": "Cisco Aironet 2600 Series (IEEE 802.11n) Access Point",
+                                                                "AP_SN": "JTV1803A0K9"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.58"
+                                                                ],
+                                                                "AP_MAC": "c0:8c:60:6b:28:1d",
+                                                                "AP_MODEL": "AIR-CAP1602I-R-K9",
+                                                                "AP_NAME": "503",
+                                                                "AP_PLATFORM": "Cisco Aironet 1600 Series (IEEE 802.11n) Access Point",
+                                                                "AP_SN": "FGL1734W3VN"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.68"
+                                                                ],
+                                                                "AP_MAC": "88:5a:92:f7:58:89",
+                                                                "AP_MODEL": "AIR-CAP1602I-R-K9",
+                                                                "AP_NAME": "5th_floor_hall_left",
+                                                                "AP_PLATFORM": "Cisco Aironet 1600 Series (IEEE 802.11n) Access Point",
+                                                                "AP_SN": "FGL1744W0S7"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.64"
+                                                                ],
+                                                                "AP_MAC": "00:62:ec:8e:da:94",
+                                                                "AP_MODEL": "AIR-CAP3702I-R-K9",
+                                                                "AP_NAME": "701_Reception",
+                                                                "AP_PLATFORM": "Cisco Aironet 3700 Series (IEEE 802.11ac) Access Point",
+                                                                "AP_SN": "JTV2029A01J"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.5"
+                                                                ],
+                                                                "AP_MAC": "70:df:2f:6d:6b:ec",
+                                                                "AP_MODEL": "AIR-AP2802I-R-K9",
+                                                                "AP_NAME": "704",
+                                                                "AP_PLATFORM": "Cisco Aironet 2800 Series (IEEE 802.11ac) Access Point",
+                                                                "AP_SN": "JTV2142A0VS"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.61"
+                                                                ],
+                                                                "AP_MAC": "a8:0c:0d:9e:71:e0",
+                                                                "AP_MODEL": "AIR-CAP1602I-R-K9",
+                                                                "AP_NAME": "601_TT",
+                                                                "AP_PLATFORM": "Cisco Aironet 1600 Series (IEEE 802.11n) Access Point",
+                                                                "AP_SN": "FGL1802X0JU"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.70"
+                                                                ],
+                                                                "AP_MAC": "00:62:ec:a1:64:e0",
+                                                                "AP_MODEL": "AIR-CAP3702I-R-K9",
+                                                                "AP_NAME": "615-1",
+                                                                "AP_PLATFORM": "Cisco Aironet 3700 Series (IEEE 802.11ac) Access Point",
+                                                                "AP_SN": "JTV2029A01L"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.32"
+                                                                ],
+                                                                "AP_MAC": "a0:e0:af:2d:88:e0",
+                                                                "AP_MODEL": "AIR-AP2802I-R-K9",
+                                                                "AP_NAME": "201_OTT",
+                                                                "AP_PLATFORM": "Cisco Aironet 2800 Series (IEEE 802.11ac) Access Point",
+                                                                "AP_SN": "JTV2142A0VV"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.54"
+                                                                ],
+                                                                "AP_MAC": "a8:0c:0d:9e:72:0f",
+                                                                "AP_MODEL": "AIR-CAP1602I-R-K9",
+                                                                "AP_NAME": "Openspace_2_Floor",
+                                                                "AP_PLATFORM": "Cisco Aironet 1600 Series (IEEE 802.11n) Access Point",
+                                                                "AP_SN": "FGL1802X0JV"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.56"
+                                                                ],
+                                                                "AP_MAC": "24:e9:b3:f9:0d:88",
+                                                                "AP_MODEL": "AIR-CAP1602I-R-K9",
+                                                                "AP_NAME": "210_exArchive",
+                                                                "AP_PLATFORM": "Cisco Aironet 1600 Series (IEEE 802.11n) Access Point",
+                                                                "AP_SN": "FGL1802X0JT"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.9"
+                                                                ],
+                                                                "AP_MAC": "70:df:2f:6d:6b:e6",
+                                                                "AP_MODEL": "AIR-AP2802I-R-K9",
+                                                                "AP_NAME": "205_Trapeznaya",
+                                                                "AP_PLATFORM": "Cisco Aironet 2800 Series (IEEE 802.11ac) Access Point",
+                                                                "AP_SN": "JTV2142A0VT"
+                                                },
+                                                {
+                                                                "AP_INTERFACE": "GigabitEthernet0",
+                                                                "AP_IP": [
+                                                                                "192.168.180.29"
+                                                                ],
+                                                                "AP_MAC": "a0:23:9f:67:0a:6e",
+                                                                "AP_MODEL": "AIR-AP2802I-R-K9",
+                                                                "AP_NAME": "209",
+                                                                "AP_PLATFORM": "Cisco Aironet 2800 Series (IEEE 802.11ac) Access Point",
+                                                                "AP_SN": "JTV2142A0VU"
+                                                }
+                                ],
+                                "CONNECTIONS": [
+                                                {
+                                                                "DEVICE_A": "78-ELS-WLC",
+                                                                "DEVICE_B": "78-ELS-CORE",
+                                                                "INTERFACE_A": "GigabitEthernet0/0/1",
+                                                                "INTERFACE_B": "GigabitEthernet2/5/34"
+                                                },
+                                                {
+                                                                "DEVICE_A": "78-ELS-WLC",
+                                                                "DEVICE_B": "78-ELS-CORE",
+                                                                "INTERFACE_A": "GigabitEthernet0/0/2",
+                                                                "INTERFACE_B": "GigabitEthernet2/6/34"
+                                                },
+                                                {
+                                                                "DEVICE_A": "78-ELS-WLC",
+                                                                "DEVICE_B": "78-ELS-CORE",
+                                                                "INTERFACE_A": "GigabitEthernet0/0/3",
+                                                                "INTERFACE_B": "GigabitEthernet1/5/34"
+                                                },
+                                                {
+                                                                "DEVICE_A": "78-ELS-WLC",
+                                                                "DEVICE_B": "78-ELS-CORE",
+                                                                "INTERFACE_A": "GigabitEthernet0/0/4",
+                                                                "INTERFACE_B": "GigabitEthernet1/6/34"
+                                                }
+                                ],
+                                "DEVICE_IP": "192.168.180.254",
+                                "DEVICE_NAME": "78-ELS-WLC",
+                                "DEVICE_PLATFORM": "Cisco 3500 Series Wireless LAN Controller",
+                                "DEVICE_ROLE": "wlc",
+                                "DEVICE_TYPE": "AIR-CT3504-K9",
+                                "INTERFACES": [
+                                                {
+                                                                "ACL": "Unconfigured",
+                                                                "INTF": "guest",
+                                                                "IP_GATEWAY": "192.168.181.1",
+                                                                "MAC_ADDRESS": "70:1f:53:b6:d9:08",
+                                                                "PHYSICAL_PORT": "LAG (8)",
+                                                                "PRIMARY_IP_ADDRESS": [
+                                                                                "192.168.181.253"
+                                                                ],
+                                                                "PRIMARY_IP_MASK": [
+                                                                                "255.255.255.0"
+                                                                ],
+                                                                "VLAN": "181"
+                                                },
+                                                {
+                                                                "ACL": "Unconfigured",
+                                                                "INTF": "ise_test",
+                                                                "IP_GATEWAY": "192.168.185.1",
+                                                                "MAC_ADDRESS": "70:1f:53:b6:d9:08",
+                                                                "PHYSICAL_PORT": "LAG (8)",
+                                                                "PRIMARY_IP_ADDRESS": [
+                                                                                "192.168.185.254"
+                                                                ],
+                                                                "PRIMARY_IP_MASK": [
+                                                                                "255.255.255.0"
+                                                                ],
+                                                                "VLAN": "185"
+                                                },
+                                                {
+                                                                "ACL": "Unconfigured",
+                                                                "INTF": "management",
+                                                                "IP_GATEWAY": "192.168.180.1",
+                                                                "MAC_ADDRESS": "70:1f:53:b6:d9:08",
+                                                                "PHYSICAL_PORT": "LAG (8)",
+                                                                "PRIMARY_IP_ADDRESS": [
+                                                                                "192.168.180.254"
+                                                                ],
+                                                                "PRIMARY_IP_MASK": [
+                                                                                "255.255.255.0"
+                                                                ],
+                                                                "VLAN": "180"
+                                                },
+                                                {
+                                                                "ACL": "",
+                                                                "INTF": "redundancy-management",
+                                                                "IP_GATEWAY": "",
+                                                                "MAC_ADDRESS": "70:1f:53:b6:d9:08",
+                                                                "PHYSICAL_PORT": "",
+                                                                "PRIMARY_IP_ADDRESS": [
+                                                                                "192.168.180.253"
+                                                                ],
+                                                                "PRIMARY_IP_MASK": [],
+                                                                "VLAN": ""
+                                                },
+                                                {
+                                                                "ACL": "",
+                                                                "INTF": "redundancy-port",
+                                                                "IP_GATEWAY": "",
+                                                                "MAC_ADDRESS": "70:1f:53:b6:d9:07",
+                                                                "PHYSICAL_PORT": "",
+                                                                "PRIMARY_IP_ADDRESS": [
+                                                                                "169.254.180.253"
+                                                                ],
+                                                                "PRIMARY_IP_MASK": [],
+                                                                "VLAN": ""
+                                                },
+                                                {
+                                                                "ACL": "Unconfigured",
+                                                                "INTF": "nsc-mobile",
+                                                                "IP_GATEWAY": "192.168.183.1",
+                                                                "MAC_ADDRESS": "70:1f:53:b6:d9:08",
+                                                                "PHYSICAL_PORT": "LAG (8)",
+                                                                "PRIMARY_IP_ADDRESS": [
+                                                                                "192.168.183.253"
+                                                                ],
+                                                                "PRIMARY_IP_MASK": [
+                                                                                "255.255.255.0"
+                                                                ],
+                                                                "VLAN": "183"
+                                                },
+                                                {
+                                                                "ACL": "Unconfigured",
+                                                                "INTF": "office",
+                                                                "IP_GATEWAY": "192.168.184.1",
+                                                                "MAC_ADDRESS": "70:1f:53:b6:d9:08",
+                                                                "PHYSICAL_PORT": "LAG (8)",
+                                                                "PRIMARY_IP_ADDRESS": [
+                                                                                "192.168.184.253"
+                                                                ],
+                                                                "PRIMARY_IP_MASK": [
+                                                                                "255.255.255.0"
+                                                                ],
+                                                                "VLAN": "184"
+                                                },
+                                                {
+                                                                "ACL": "",
+                                                                "INTF": "service-port",
+                                                                "IP_GATEWAY": "",
+                                                                "MAC_ADDRESS": "70:1f:53:b6:d9:06",
+                                                                "PHYSICAL_PORT": "",
+                                                                "PRIMARY_IP_ADDRESS": [
+                                                                                "0.0.0.0"
+                                                                ],
+                                                                "PRIMARY_IP_MASK": [],
+                                                                "VLAN": ""
+                                                },
+                                                {
+                                                                "ACL": "Unconfigured",
+                                                                "INTF": "stb_ott",
+                                                                "IP_GATEWAY": "10.144.20.161",
+                                                                "MAC_ADDRESS": "70:1f:53:b6:d9:08",
+                                                                "PHYSICAL_PORT": "LAG (8)",
+                                                                "PRIMARY_IP_ADDRESS": [
+                                                                                "10.144.20.190"
+                                                                ],
+                                                                "PRIMARY_IP_MASK": [
+                                                                                "255.255.255.224"
+                                                                ],
+                                                                "VLAN": "308"
+                                                },
+                                                {
+                                                                "ACL": "Unconfigured",
+                                                                "INTF": "stb_ott2",
+                                                                "IP_GATEWAY": "10.144.20.225",
+                                                                "MAC_ADDRESS": "70:1f:53:b6:d9:08",
+                                                                "PHYSICAL_PORT": "LAG (8)",
+                                                                "PRIMARY_IP_ADDRESS": [
+                                                                                "10.144.20.254"
+                                                                ],
+                                                                "PRIMARY_IP_MASK": [
+                                                                                "255.255.255.224"
+                                                                ],
+                                                                "VLAN": "309"
+                                                },
+                                                {
+                                                                "ACL": "Unconfigured",
+                                                                "INTF": "test",
+                                                                "IP_GATEWAY": "192.168.182.1",
+                                                                "MAC_ADDRESS": "70:1f:53:b6:d9:08",
+                                                                "PHYSICAL_PORT": "LAG (8)",
+                                                                "PRIMARY_IP_ADDRESS": [
+                                                                                "192.168.182.253"
+                                                                ],
+                                                                "PRIMARY_IP_MASK": [
+                                                                                "255.255.255.0"
+                                                                ],
+                                                                "VLAN": "182"
+                                                },
+                                                {
+                                                                "ACL": "",
+                                                                "INTF": "virtual",
+                                                                "IP_GATEWAY": "",
+                                                                "MAC_ADDRESS": "70:1f:53:b6:d9:00",
+                                                                "PHYSICAL_PORT": "",
+                                                                "PRIMARY_IP_ADDRESS": [
+                                                                                "192.0.2.1"
+                                                                ],
+                                                                "PRIMARY_IP_MASK": [],
+                                                                "VLAN": ""
+                                                },
+                                                {
+                                                                "ADMIN_MODE": "Enable",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet0/0/1",
+                                                                "LINK_TRAP": "Enable",
+                                                                "PHYSICAL_MODE": "Auto",
+                                                                "PHYSICAL_STATUS": "1000 Full",
+                                                                "POE": "N/A",
+                                                                "PROTOCOL_STATUS": "Up",
+                                                                "STP_STATUS": "Forw",
+                                                                "TYPE": "Normal"
+                                                },
+                                                {
+                                                                "ADMIN_MODE": "Enable",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet0/0/2",
+                                                                "LINK_TRAP": "Enable",
+                                                                "PHYSICAL_MODE": "Auto",
+                                                                "PHYSICAL_STATUS": "1000 Full",
+                                                                "POE": "N/A",
+                                                                "PROTOCOL_STATUS": "Up",
+                                                                "STP_STATUS": "Forw",
+                                                                "TYPE": "Normal"
+                                                },
+                                                {
+                                                                "ADMIN_MODE": "Enable",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet0/0/3",
+                                                                "LINK_TRAP": "Enable",
+                                                                "PHYSICAL_MODE": "Auto",
+                                                                "PHYSICAL_STATUS": "1000 Full",
+                                                                "POE": "N/A",
+                                                                "PROTOCOL_STATUS": "Up",
+                                                                "STP_STATUS": "Forw",
+                                                                "TYPE": "Normal"
+                                                },
+                                                {
+                                                                "ADMIN_MODE": "Enable",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet0/0/4",
+                                                                "LINK_TRAP": "Enable",
+                                                                "PHYSICAL_MODE": "Auto",
+                                                                "PHYSICAL_STATUS": "1000 Full",
+                                                                "POE": "N/A",
+                                                                "PROTOCOL_STATUS": "Up",
+                                                                "STP_STATUS": "Forw",
+                                                                "TYPE": "Normal"
+                                                },
+                                                {
+                                                                "ADMIN_MODE": "Enable",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet0/0/5",
+                                                                "LINK_TRAP": "Enable",
+                                                                "PHYSICAL_MODE": "Auto",
+                                                                "PHYSICAL_STATUS": "Auto",
+                                                                "POE": "N/A",
+                                                                "PROTOCOL_STATUS": "Down",
+                                                                "STP_STATUS": "Disa",
+                                                                "TYPE": "Normal"
+                                                },
+                                                {
+                                                                "ADMIN_MODE": "Enable",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "RP",
+                                                                "LINK_TRAP": "Enable",
+                                                                "PHYSICAL_MODE": "Auto",
+                                                                "PHYSICAL_STATUS": "Auto",
+                                                                "POE": "N/A",
+                                                                "PROTOCOL_STATUS": "Up",
+                                                                "STP_STATUS": "Forw",
+                                                                "TYPE": "Normal"
+                                                },
+                                                {
+                                                                "ADMIN_MODE": "Enable",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "SP",
+                                                                "LINK_TRAP": "Enable",
+                                                                "PHYSICAL_MODE": "Auto",
+                                                                "PHYSICAL_STATUS": "Auto",
+                                                                "POE": "N/A",
+                                                                "PROTOCOL_STATUS": "Down",
+                                                                "STP_STATUS": "Disa",
+                                                                "TYPE": "Normal"
+                                                }
+                                ],
+                                "INVENTORY": [
+                                                {
+                                                                "DESCRIPTION": "Cisco 3500 Series Wireless LAN Controller",
+                                                                "MANUFACTURER": "Cisco",
+                                                                "NAME": "Chassis",
+                                                                "PID": "AIR-CT3504-K9",
+                                                                "SN": "FCW2142M01P"
+                                                }
+                                ],
+                                "MANUFACTURER": "Cisco",
+                                "REGION": 78,
+                                "SERIAL_NUMBER": "FCW2142M01P",
+                                "SITE": "ELS",
+                                "SOFTWARE": "Cisco Air OS",
+                                "WLANS": [
+                                                {
+                                                                "INTERFACE": "office",
+                                                                "SSID": "NSC-Office",
+                                                                "WLANID": "1"
+                                                },
+                                                {
+                                                                "INTERFACE": "test",
+                                                                "SSID": "NSC-test",
+                                                                "WLANID": "2"
+                                                },
+                                                {
+                                                                "INTERFACE": "guest",
+                                                                "SSID": "NSC-guest",
+                                                                "WLANID": "3"
+                                                },
+                                                {
+                                                                "INTERFACE": "nsc-mobile",
+                                                                "SSID": "NSC-mobile",
+                                                                "WLANID": "4"
+                                                },
+                                                {
+                                                                "INTERFACE": "ise_test",
+                                                                "SSID": "NSC-ise-test",
+                                                                "WLANID": "17"
+                                                },
+                                                {
+                                                                "INTERFACE": "stb_ott",
+                                                                "SSID": "NSC-STB-TZ",
+                                                                "WLANID": "18"
+                                                },
+                                                {
+                                                                "INTERFACE": "stb_ott2",
+                                                                "SSID": "NSC-STB-TZ2",
+                                                                "WLANID": "19"
+                                                }
+                                ]
+                }
+]

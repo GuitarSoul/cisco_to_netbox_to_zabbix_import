@@ -1,0 +1,12 @@
+Value Required VLAN_ID (\d+)
+Value NAME ([-\w\s]+)
+Value INTERFACES (\S+)
+
+
+
+Start
+  ^\s+\d+ -> Continue.Record
+  ^\s+${VLAN_ID}\s+\|\s+${NAME}\|\s+${INTERFACES}\s+\|\s+\S+\s+\|\s+\S+\s$$
+  # Capture time-stamp if vty line has command time-stamping turned on
+  ^Load\s+for\s+
+  ^Time\s+source\s+is

@@ -1,0 +1,15 @@
+Value VERSION (\S+)
+Value DEVICE_NAME (\S+)
+Value UPTIME (.+)
+Value RUNNING_IMAGE (\S+)
+Value SN (\S+)
+Value PLATFORM (\S+)
+Value PID (\S+)
+Value MANUFACTURER (\S+)
+
+Start
+  ^${MANUFACTURER}\s+${PLATFORM}\s+Series\s+Switch\s+Software,\sVersion\s${VERSION},\s+RELEASE\s+SOFTWARE$$
+  ^\s*${DEVICE_NAME}\s+uptime\s+is\s+${UPTIME}
+  ^[sS]ystem\s+image\s+is\s+${RUNNING_IMAGE}
+  ^Serial\s+Number\s+:\s+${SN}$$
+  ^PID\s+:\s+${PID}$$

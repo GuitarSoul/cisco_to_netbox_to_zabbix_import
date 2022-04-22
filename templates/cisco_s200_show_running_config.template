@@ -1,0 +1,24 @@
+Value Required INTF (\S+)
+Value DESCRIPTION ([\S\s]+)
+Value ETHERCHANNEL_MEMBERS (\d+)
+Value ACCESS_VLAN (\d+|unassigned)
+Value List TRUNKING_VLANS (\S+?)
+Value ADMIN_MODE (trunk|access)
+
+
+Start
+  ^interface\s+\S+$$ -> Continue.Record
+  ^interface\s+${INTF}$$ 
+  ^\s*description\s+"${DESCRIPTION}"$$
+  ^\s*channel-group\s+${ETHERCHANNEL_MEMBERS}\s+mode\s+\S+$$
+  ^\s*switchport\s+${ADMIN_MODE}\s+vlan\s+${ACCESS_VLAN}$$
+  ^\s*switchport\s+${ADMIN_MODE}\s+allowed\s+vlan\s+add\s+${TRUNKING_VLANS}$$
+  ^\s*switchport\s+${ADMIN_MODE}\s+allowed\s+vlan\s+add\s+${TRUNKING_VLANS},\s*$$ -> Trunk
+  # Capture time-stamp if vty line has command time-stamping turned on
+  ^Load\s+for\s+
+  ^Time\s+source\s+is
+
+
+Trunk
+  ^\s+${TRUNKING_VLANS},\s*$$ -> Start
+  ^\s+${TRUNKING_VLANS}\s*$$

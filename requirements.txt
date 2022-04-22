@@ -1,0 +1,14 @@
+atlassian==0.0.0
+atlassian_python_api==3.21.0
+dnspython==2.2.1
+html_to_json==2.0.0
+netmiko==4.0.0
+paramiko==2.10.3
+paramiko_expect==0.3.2
+pynetbox==6.6.1
+pyVim==3.0.2
+PyYAML==6.0
+pyzabbix==1.0.0
+requests==2.26.0
+tabulate==0.8.9
+textfsm==1.1.2

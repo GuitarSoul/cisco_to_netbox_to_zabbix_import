@@ -1,0 +1,10 @@
+Value Required INTF (\S+)
+Value OUTGOING_ACL (\S+)
+Value INBOUND_ACL (\S+)
+
+
+Start
+  ^interface\s+\S+$$ -> Continue.Record
+  ^interface\s+${INTF}$$ 
+  ^\s+ip\s+access-group\s+${INBOUND_ACL}\s+in$$
+  ^\s+ip\s+access-group\s+${OUTGOING_ACL}\s+out$$

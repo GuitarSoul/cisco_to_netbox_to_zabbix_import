@@ -1,0 +1,7 @@
+Value AP_NAME (\S+)
+Value AP_MODEL (\S+)
+Value MAC ([a-fA-F0-9:\.]+)
+Value List PRIMARY_IP_ADDRESS (\d+\.\d+\.\d+\.\d+)
+
+Start
+  ^${AP_NAME}\s+\d+\s+${AP_MODEL}\s+${MAC}\s+.*\s+${PRIMARY_IP_ADDRESS}\s+.*\[.*]$$ -> Record

@@ -1,0 +1,9 @@
+Value IP (\d+\.\d+\.\d+\.\d+)
+Value MASK (\S+)
+Value GATEWAY (\d+\.\d+\.\d+\.\d+)
+
+
+Start
+	^IP\s+Address:\s+${IP}$$
+	^Subnet\s+Netmask:\s+${MASK}$$
+	^Default\s+Gateway:\s+${GATEWAY}$$

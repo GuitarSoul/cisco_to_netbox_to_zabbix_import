@@ -1,0 +1,10 @@
+Value Required INTF (\S+)
+Value ADMIN_MODE (.+?)
+
+Start
+  ^Port\s+:\s+\S+$$ -> Continue.Record
+  ^Port\s+:\s+${INTF}$$
+  ^\s*Port\s+Mode\s+:\s+${ADMIN_MODE}$$
+  # Capture time-stamp if vty line has command time-stamping turned on
+  ^Load\s+for\s+
+  ^Time\s+source\s+is

@@ -1,0 +1,25 @@
+Value Filldown VRF (\S+)
+Value Required INTF (\S+)
+Value PROTOCOL_STATUS (\w+)
+Value LINK_STATUS (\w+)
+Value ADMIN_STATUS (\w+)
+Value MTU (\d+)
+Value List PRIMARY_IP_ADDRESS (\S+)
+Value List PRIMARY_IP_SUBNET (\S+)
+Value List PRIMARY_IP_MASK (\d+)
+Value List SECONDARY_IP_ADDRESS (\S+)
+Value List SECONDARY_IP_SUBNET (\S+)
+Value List SECONDARY_IP_MASK (\d+)
+Value OUTGOING_ACL (\S+)
+Value INBOUND_ACL (\S+)
+
+
+Start
+  ^\S -> Continue.Record
+  ^IP\s+Interface\s+Status\s+for\s+VRF\s+\"${VRF}\"\s*$$
+  ^${INTF},.*protocol-${PROTOCOL_STATUS}\/link-${LINK_STATUS}\/admin-${ADMIN_STATUS},.*$$
+  ^\s+IP\s+MTU:\s+${MTU}.*$$
+  ^\s+IP\s+address:\s+${PRIMARY_IP_ADDRESS},\s+IP\s+subnet:\s+${PRIMARY_IP_SUBNET}\/${PRIMARY_IP_MASK}\s.*$$
+  ^\s+IP\s+address:\s+${SECONDARY_IP_ADDRESS},\s+IP\s+subnet:\s+${SECONDARY_IP_SUBNET}\/${SECONDARY_IP_MASK}\s+secondary\s.*$$
+  ^\s+IP\s+outbound\saccess\slist:\s+${OUTGOING_ACL}
+  ^\s+IP\s+inbound\saccess\slist:\s+${INBOUND_ACL}

@@ -1,0 +1,690 @@
+[
+                {
+                                "CONNECTIONS": [
+                                                {
+                                                                "DEVICE_A": "N6-CC-ASW-2-4",
+                                                                "DEVICE_B": "78-N6-CC-CORE-OFFICE",
+                                                                "INTERFACE_A": "GigabitEthernet49",
+                                                                "INTERFACE_B": "TenGigabitEthernet1/1/7"
+                                                },
+                                                {
+                                                                "DEVICE_A": "N6-CC-ASW-2-4",
+                                                                "DEVICE_B": "78-N6-CC-CORE-OFFICE",
+                                                                "INTERFACE_A": "GigabitEthernet50",
+                                                                "INTERFACE_B": "GigabitEthernet2/0/47"
+                                                }
+                                ],
+                                "DEVICE_IP": "10.10.1.86",
+                                "DEVICE_NAME": "N6-CC-ASW-2-4",
+                                "DEVICE_PLATFORM": "Sx220",
+                                "DEVICE_ROLE": "switch_smb",
+                                "DEVICE_TYPE": "SG220-50-K9",
+                                "INTERFACES": [
+                                                {
+                                                                "ACCESS_VLAN": "",
+                                                                "ADMIN_MODE": "",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet1",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet2",
+                                                                "PROTOCOL_STATUS": "down",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet3",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet4",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet5",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet6",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet7",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet8",
+                                                                "PROTOCOL_STATUS": "down",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet9",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet10",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet11",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet12",
+                                                                "PROTOCOL_STATUS": "down",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet13",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet14",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet15",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet16",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet17",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet18",
+                                                                "PROTOCOL_STATUS": "down",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet19",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet20",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet21",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet22",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet23",
+                                                                "PROTOCOL_STATUS": "down",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet24",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet25",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet26",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet27",
+                                                                "PROTOCOL_STATUS": "down",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet28",
+                                                                "PROTOCOL_STATUS": "down",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet29",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet30",
+                                                                "PROTOCOL_STATUS": "down",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet31",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet32",
+                                                                "PROTOCOL_STATUS": "down",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet33",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1020",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet34",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1020",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet35",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "",
+                                                                "ADMIN_MODE": "trunk",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet36",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                "161"
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1020",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet37",
+                                                                "PROTOCOL_STATUS": "down",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "",
+                                                                "ADMIN_MODE": "trunk",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet38",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                "161"
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "",
+                                                                "ADMIN_MODE": "trunk",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet39",
+                                                                "PROTOCOL_STATUS": "down",
+                                                                "TRUNKING_VLANS": [
+                                                                                "161"
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "",
+                                                                "ADMIN_MODE": "trunk",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet40",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                "161"
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1020",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet41",
+                                                                "PROTOCOL_STATUS": "down",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1027",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet42",
+                                                                "PROTOCOL_STATUS": "down",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1027",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet43",
+                                                                "PROTOCOL_STATUS": "down",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1027",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet44",
+                                                                "PROTOCOL_STATUS": "down",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1027",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet45",
+                                                                "PROTOCOL_STATUS": "down",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1020",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet46",
+                                                                "PROTOCOL_STATUS": "down",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet47",
+                                                                "PROTOCOL_STATUS": "down",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "1159",
+                                                                "ADMIN_MODE": "access",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet48",
+                                                                "PROTOCOL_STATUS": "down",
+                                                                "TRUNKING_VLANS": [
+                                                                                ""
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "",
+                                                                "ADMIN_MODE": "trunk",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "1",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet49",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                "161",
+                                                                                "200",
+                                                                                "1015",
+                                                                                "1020",
+                                                                                "1026",
+                                                                                "1027",
+                                                                                "1030",
+                                                                                "1159",
+                                                                                "1166"
+                                                                ]
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "",
+                                                                "ADMIN_MODE": "trunk",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "1",
+                                                                "HARDWARE_TYPE": "Gigabit Ethernet",
+                                                                "INTF": "GigabitEthernet50",
+                                                                "PROTOCOL_STATUS": "up",
+                                                                "TRUNKING_VLANS": [
+                                                                                "161",
+                                                                                "200",
+                                                                                "1015",
+                                                                                "1020",
+                                                                                "1026",
+                                                                                "1027",
+                                                                                "1030",
+                                                                                "1159",
+                                                                                "1166"
+                                                                ]
+                                                },
+                                                {
+                                                                "DESCRIPTION": "Management Vlan",
+                                                                "INTF": "mgmt",
+                                                                "PRIMARY_IP_ADDRESS": [
+                                                                                "10.10.1.86"
+                                                                ],
+                                                                "PRIMARY_IP_MASK": [
+                                                                                "255.255.255.0"
+                                                                ],
+                                                                "PROTOCOL_STATUS": "up"
+                                                },
+                                                {
+                                                                "ACCESS_VLAN": "",
+                                                                "ADMIN_MODE": "trunk",
+                                                                "DESCRIPTION": "",
+                                                                "ETHERCHANNEL_MEMBERS": "",
+                                                                "INTF": "Port-channel1",
+                                                                "TRUNKING_VLANS": [
+                                                                                "112",
+                                                                                "161",
+                                                                                "200",
+                                                                                "1015",
+                                                                                "1020",
+                                                                                "1026",
+                                                                                "1027",
+                                                                                "1030",
+                                                                                "1159",
+                                                                                "1166"
+                                                                ]
+                                                }
+                                ],
+                                "MANUFACTURER": "Cisco",
+                                "REGION": 78,
+                                "SERIAL_NUMBER": "DNI23170703",
+                                "SITE": "N6",
+                                "SOFTWARE": "Cisco Sx220 Series Switch Software",
+                                "VLANS": [
+                                                {
+                                                                "site": "N6",
+                                                                "vlan_group": "",
+                                                                "vlan_group_description": "",
+                                                                "vlan_id": "1",
+                                                                "vlan_name": "default",
+                                                                "vlan_ports": "gi49-50,po1-8",
+                                                                "vlan_primary_prefixes": [],
+                                                                "vlan_secondary_prefixes": [],
+                                                                "vlan_status": "active",
+                                                                "vrf": ""
+                                                }
+                                ]
+                }
+]

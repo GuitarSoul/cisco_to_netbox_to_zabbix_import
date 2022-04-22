@@ -1,0 +1,13 @@
+Value Required NEIGHBOR (\S+)
+Value LOCAL_INTERFACE (\S+)
+Value CAPABILITY ([RTBSHIrPMCW\s]+)
+Value NEIGHBOR_INTERFACE (\S+)
+
+Start
+  ^------------------\s+-----------\s+----\s+--------\s+----------\s+------------\s+-----------$$ -> CDP
+
+CDP
+  ^${NEIGHBOR}\s$$
+  ^\s+${LOCAL_INTERFACE}\s+\d+\s+\d+\s+${CAPABILITY}\S+\s\S+\s+${NEIGHBOR_INTERFACE}$$ -> Record
+  ^\s+${LOCAL_INTERFACE}\s+\d+\s+\d+\s+${CAPABILITY}\s+\S+\s+${NEIGHBOR_INTERFACE}$$ -> Record
+  ^${NEIGHBOR}\s+${LOCAL_INTERFACE}\s+\d+\s+\d+\s+${CAPABILITY}\S+\s\S+\s+${NEIGHBOR_INTERFACE}$$ -> Record

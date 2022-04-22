@@ -1,0 +1,252 @@
+#Confluence 
+confluence.username: 'netbox'
+confluence.username: 'netbox'
+confluence.url: 'http://confluence.tricolor.tv:8090'
+confluence.pageid: '76159999'
+################################################################################
+#Credentials for ESXI
+esxi.username : 'Netbox_NOC'
+esxi.password : 'mgYuS9SL'
+esxi.url: '172.16.0.60'
+################################################################################
+#Credentials to cinnect by SSH
+ssh.username: 'monko'
+ssh.password: 'Kramarov5'
+#Number of devices to connect in a Thread
+limit: 20
+#Domains of an Enterprise
+domains: 
+    - '.msk.neo'
+    - '.nsc.ru'
+    - '.fortline.org'
+#For distinguishing device roles  
+switches:
+    - 'WS-'
+    - '9200'  
+switches_L3:
+    - 'WS-C3750'
+    - 'WS-C3850'
+    - '6807'
+    - '9300'
+    - 'N9K-C93240'
+    - 'N9K-C93180'
+    - 'N3K-C3172'
+    - 'N5K-C5548'
+    - 'N9K-C9508'
+    - 'N3K-C3548'
+#For distinguishing sites and region codes
+sites:
+    ELS: 78
+    REN: 78
+    SEL: 78
+    MSKIX: 78
+    MIR: 78
+    N6: 78
+    GSLAB: 78
+    GOD: 77
+    SKL: 77
+    IRK: 38
+################################################################################
+#Netbox
+netbox.url: 'https://172.16.0.149'
+netbox.token: 'b8ebc52b4513ea29e56da75713f6bca1cb368306'
+netbox.debug: 'False'
+################################################################################
+zabbix.url : 'http://mv-app-zbx/'
+zabbix.user : 'netbox'
+zabbix.password : '&mw%8Z=RpiF#Vs5N'
+debug: 0
+
+processed_roles:
+  - router
+  - switch
+  - switch_layer_3
+  - router_dzr
+  - switch_dzr
+  - switch_smb
+  - switch_smb_cod
+  - switch_cod
+  - wlc
+  - ap
+
+template:
+    router:
+        - Cisco Router
+        - Template SNMP BGP
+        - Template SNMP OSPF
+    switch_layer_3:
+        - Cisco Router
+        - Template SNMP BGP
+        - Template SNMP OSPF
+    router_dzr:
+        - Cisco Router
+        - Template SNMP BGP
+        - Template SNMP OSPF
+    switch_cod:
+        - Cisco Switch Datacenter
+    switch:
+        - Cisco Switch Office
+    switch_dzr:
+        - Cisco Switch Office
+    switch_smb:
+        - Cisco Switch SMB Office
+    switch_smb_cod:
+        - Cisco Switch SMB Datacenter
+    wlc:
+        - Cisco WLC
+    ap:
+        - Simple ICMP
+
+group:
+  N6:
+    router:
+        - Contact Center
+    switch:
+        - Contact Center
+    switch_layer_3:
+        - Contact Center
+    switch_smb:
+        - Contact Center
+    router_dzr:
+        - Contact Center
+        - IT security
+    switch_dzr:
+        - Contact Center
+        - IT security
+  ELS:
+    router:
+        - Московский пр.139
+    switch:
+        - Московский пр.139
+    switch_layer_3:
+        - Московский пр.139
+    router_dzr:
+        - Московский пр.139
+        - IT security
+    switch_dzr:
+        - Московский пр.139
+        - IT security
+    wlc:
+        - Московский пр.139
+        - Wi-Fi
+    ap:
+        - Московский пр.139
+        - Wi-Fi
+  GOD:
+    router:
+        - ЦОД Годовикова
+    switch:
+        - ЦОД Годовикова
+    switch_layer_3:
+        - ЦОД Годовикова
+    router_dzr:
+        - ЦОД Годовикова
+        - IT security
+    switch_dzr:
+        - ЦОД Годовикова
+        - IT security
+    switch_cod:
+        - ЦОД Годовикова
+  IRK:
+    router:
+        - Иркутск Селитбенный пр-д.3a
+    switch:
+        - Иркутск Селитбенный пр-д.3a
+    switch_layer_3:
+        - Иркутск Селитбенный пр-д.3a
+    router_dzr:
+        - Иркутск Селитбенный пр-д.3a
+        - IT security
+    switch_dzr:
+        - Иркутск Селитбенный пр-д.3a
+        - IT security
+    switch_cod:
+        - Иркутск Селитбенный пр-д.3a
+  MIR:
+    router:
+        - ЦОД Miran
+    switch:
+        - ЦОД Miran
+    switch_layer_3:
+        - ЦОД Miran
+    router_dzr:
+        - ЦОД Miran
+        - IT security
+    switch_dzr:
+        - ЦОД Miran
+        - IT security
+  MSKIX:
+    router:
+        - M9 MSK-IX
+    switch:
+        - M9 MSK-IX
+    switch_layer_3:
+        - M9 MSK-IX
+    switch_smb:
+        - M9 MSK-IX
+    switch_smb_cod:
+        - M9 MSK-IX
+    router_dzr:
+        - M9 MSK-IX
+        - IT security
+    switch_dzr:
+        - M9 MSK-IX
+        - IT security
+  REN:
+    router:
+        - Рентгена 5а
+    switch:
+        - Рентгена 5а
+    switch_layer_3:
+        - Рентгена 5а
+    router_dzr:
+        - Рентгена 5а
+        - IT security
+    switch_dzr:
+        - Рентгена 5а
+        - IT security
+    switch_cod:
+        - Рентгена 5а
+    switch_smb:
+        - Рентгена 5а
+    wlc:
+        - Рентгена 5а
+        - Wi-Fi
+    ap:
+        - Рентгена 5а
+        - Wi-Fi
+  SEL:
+    router:
+        - ЦОД Selectel
+    switch:
+        - ЦОД Selectel
+    switch_layer_3:
+        - ЦОД Selectel
+    router_dzr:
+        - ЦОД Selectel
+        - IT security
+    switch_dzr:
+        - ЦОД Selectel
+        - IT security
+    switch_cod:
+        - ЦОД Selectel
+  SKL:
+    router:
+        - ЦКС Сколково
+    switch:
+        - ЦКС Сколково
+    switch_layer_3:
+        - ЦКС Сколково
+    router_dzr:
+        - ЦКС Сколково
+        - IT security
+    switch_dzr:
+        - ЦКС Сколково
+        - IT security
+    switch_cod:
+        - ЦКС Сколково
+  GSLAB:
+    router:
+        - GSLAB
+    switch:
+        - GSLAB

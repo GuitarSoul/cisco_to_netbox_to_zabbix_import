@@ -1,0 +1,11 @@
+Value NAME (Te\S+)
+Value DESCR (.*)
+Value PID (.*)
+Value SN (\S+)
+
+Start
+  ^Te\S+$$ -> Continue.Record
+  ^${NAME}$$
+  ^\s*Vendor\s+Name:\s+${DESCR}\s*$$           
+  ^\s*Vendor\s+Part\s+Number:\s+${PID}\(rev.*$$
+  ^\s*Vendor\s+Serial\s+Number:\s+${SN}\s*

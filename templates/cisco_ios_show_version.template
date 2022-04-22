@@ -1,0 +1,22 @@
+Value VERSION (.+?)
+Value DEVICE_NAME (\S+)
+Value UPTIME (.+)
+Value RUNNING_IMAGE (\S+)
+Value List HARDWARE (\S+\d\S+)
+Value List SERIAL (\S+)
+Value PLATFORM (\S+)
+Value MANUFACTURER (\S+)
+Value SOFTWARE (.*)
+
+Start
+  ^${MANUFACTURER}\s+.*\(${PLATFORM}\),\sVersion\s${VERSION},*\s+RELEASE.*
+  ^\s*${DEVICE_NAME}\s+uptime\s+is\s+${UPTIME}
+  ^[sS]ystem\s+image\s+file\s+is\s+"(.*?):${RUNNING_IMAGE}"
+  ^[Pp]rocessor\s+board\s+ID\s+${SERIAL}
+  ^[Cc]isco\s+${HARDWARE}.+
+  ^Switch Port -> Stack
+
+
+Stack
+  ^[Ss]ystem [Ss]erial [Nn]umber\s+:\s+${SERIAL}
+  ^[Mm]odel\s+[Nn]umber\s+:\s+${HARDWARE}\s*

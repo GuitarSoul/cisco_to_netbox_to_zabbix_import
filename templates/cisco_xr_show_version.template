@@ -1,0 +1,8 @@
+Value VERSION (\S[^\[]+)
+Value UPTIME (.+?)
+Value HARDWARE (.+)
+
+Start
+  ^Cisco.+Software.+Version\s+${VERSION}
+  ^.+uptime\s+is\s+${UPTIME}\s*$$
+  ^(?:\s*[Cc]isco\s+)?${HARDWARE}\s\(.*\) processor

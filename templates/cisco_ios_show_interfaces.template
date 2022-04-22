@@ -1,0 +1,24 @@
+Value Required INTF (\S+)
+Value LINK_STATUS (.+?)
+Value PROTOCOL_STATUS (\S+)
+Value HARDWARE_TYPE (.*)
+Value MAC_ADDRESS ([a-fA-F0-9]{4}\.[a-fA-F0-9]{4}\.[a-fA-F0-9]{4})
+Value DESCRIPTION (.+?)
+Value DUPLEX (([Ff]ull|[Aa]uto|[Hh]alf|[Aa]-).*?)
+Value SPEED (.*?)
+Value MEDIA_TYPE (\S+)
+Value ENCAPSULATION (.+?)
+Value ETHERCHANNEL_MEMBERS (.*)
+
+
+Start
+  ^\S+\s+is\s+.+?,\s+line\s+protocol.*$$ -> Continue.Record
+  ^${INTF}\s+is\s+${LINK_STATUS},\s+line\s+protocol\s+is\s+${PROTOCOL_STATUS}\s+.*$$
+  ^\s+Hardware\s+is\s+${HARDWARE_TYPE},\s+address\s+is\s+${MAC_ADDRESS}\s+.*$$
+  ^\s+Description:\s+${DESCRIPTION}\s*$$
+  ^\s+Encapsulation\s+${ENCAPSULATION},.+$$
+  ^\s+${DUPLEX},\s+${SPEED},.+media\stype\sis\s${MEDIA_TYPE}$$
+  ^\s+Members\s+in\s+this\s+channel:\s+${ETHERCHANNEL_MEMBERS}$$
+  # Capture time-stamp if vty line has command time-stamping turned on
+  ^Load\s+for\s+
+  ^Time\s+source\s+is

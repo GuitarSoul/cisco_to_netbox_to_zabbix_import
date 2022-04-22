@@ -1,0 +1,19 @@
+Value Required INTF (\S+)
+Value MAC_ADDRESS (\w+\.\w+\.\w+|\w+\:\w+\:\w+\:\w+\:\w+\:\w+)
+Value List PRIMARY_IP_ADDRESS (\d+.\d+.\d+.\d+)
+Value List PRIMARY_IP_MASK (\d+.\d+.\d+.\d+)
+Value IP_GATEWAY (\d+.\d+.\d+.\d+)
+Value VLAN (\d+)
+Value PHYSICAL_PORT (.*)
+Value ACL (\S+)
+
+Start
+  ^\s*Interface\s+Name\.+\s+\S+\s*$$ -> Continue.Record
+  ^\s*Interface\s+Name\.+\s+${INTF}\s*$$
+  ^\s*MAC\s+Address\.+\s+${MAC_ADDRESS}\s*$$
+  ^\s*IP\s+Address\.+\s+${PRIMARY_IP_ADDRESS}\s*$$
+  ^\s*IP\s+Netmask\.+\s+${PRIMARY_IP_MASK}\s*$$
+  ^\s*IP\s+Gateway\.+\s+${IP_GATEWAY}\s*$$
+  ^\s*VLAN\S+\.\s+${VLAN}\s+$$
+  ^\s*Active\s+Physical\s+Port\S+\.\s+${PHYSICAL_PORT}$$
+  ^\s*IPv4\s+ACL\S+\.\s+${ACL}$$

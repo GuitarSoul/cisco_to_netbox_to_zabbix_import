@@ -1,0 +1,12 @@
+Value Required INTF (\S+)
+Value PROTOCOL_STATUS (\S+)
+Value HARDWARE_TYPE ([\S\s]+)
+
+
+Start
+  ^\S+\sis\s\S+$$ -> Continue.Record
+  ^${INTF}\s+is\s+${PROTOCOL_STATUS}$$
+  ^\s+Hardware\s+is\s+${HARDWARE_TYPE}$$
+  # Capture time-stamp if vty line has command time-stamping turned on
+  ^Load\s+for\s+
+  ^Time\s+source\s+is
