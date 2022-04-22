@@ -1,5 +1,8 @@
 # (Cisco + ESXI VM) -> Netbox -> Zabbix
 
+Netbox 3.2 +
+Zabbix 6 +
+
 Cisco Devices:
   - Script uses "confluence url page" or "txt file in the same folser" to get ip list to connect
   - Script gathers all needed info by ssh
