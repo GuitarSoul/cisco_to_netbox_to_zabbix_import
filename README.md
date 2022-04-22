@@ -4,7 +4,7 @@ Netbox 3.2 +
 Zabbix 6 +
 
 Cisco Devices:
-  - Script uses "confluence url page" or "txt file in the same folser" to get ip list to connect
+  - Script uses "confluence url page" or "txt file in the same folder" to get ip list to connect
   - Script gathers all needed info by ssh
   - Parses data and writes into api/"device_name".csv files in json format (Some examples are in api folder)
   - Creates entities in Netbox (devices, interfaces, prefixes, ip addresses, vlans, cdp connections, inventory)
