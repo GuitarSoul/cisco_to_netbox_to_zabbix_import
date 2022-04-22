@@ -9,6 +9,7 @@ Cisco Devices:
   - Parses data and writes into api/"device_name".csv files in json format (Some examples are in api folder)
   - Creates entities in Netbox (devices, interfaces, prefixes, ip addresses, vlans, cdp connections, inventory)
   - Zabbix script goes through all devices and creates/updates hosts on Zabbix server
+
 ESXI VM:
   - Script gathers all needed info from ESXI server by "pyVim" module
   - Creates entities in Netbox 
