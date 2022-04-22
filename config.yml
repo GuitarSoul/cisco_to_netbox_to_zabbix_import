@@ -1,25 +1,27 @@
 #Confluence 
-confluence.username: 'netbox'
-confluence.password: 'netbox'
-confluence.url: 'http://confluence.tricolor.tv:8090'
-confluence.pageid: '76159999'
+confluence.username: ''
+confluence.password: ''
+confluence.url: 'http://confluence.........:8090'
+confluence.pageid: ''
 ################################################################################
 #Credentials for ESXI
-esxi.username : 'Netbox_NOC'
-esxi.password : 'mgYuS9SL'
-esxi.url: '172.16.0.60'
+esxi.username : ''
+esxi.password : ''
+esxi.url: ''
 ################################################################################
 #Credentials to cinnect by SSH
-ssh.username: 'monko'
-ssh.password: 'Kramarov5'
+ssh.username: ''
+ssh.password: ''
 #Number of devices to connect in a Thread
 limit: 20
 #Domains of an Enterprise
+#Networ Device's hostname consists of two parts - name and domain. These domaip parts will be filtered later in the script 
 domains: 
-    - '.msk.neo'
-    - '.nsc.ru'
-    - '.fortline.org'
-#For distinguishing device roles  
+    - ''
+    - ''
+    - ''
+#For distinguishing device roles 
+#Add some if needed, thats how device role will be assigned
 switches:
     - 'WS-'
     - '9200'  
@@ -35,36 +37,25 @@ switches_L3:
     - 'N9K-C9508'
     - 'N3K-C3548'
 #For distinguishing sites and region codes
+# SITE: city code
 sites:
     ELS: 78
     REN: 78
-    SEL: 78
-    MSKIX: 78
-    MIR: 78
-    N6: 78
-    GSLAB: 78
-    GOD: 77
-    SKL: 77
-    IRK: 38
 ################################################################################
 #Netbox
-netbox.url: 'https://172.16.0.149'
-netbox.token: 'b8ebc52b4513ea29e56da75713f6bca1cb368306'
-netbox.debug: 'False'
+netbox.url: 'https://*.*.*.*'
+netbox.token: ''
+netbox.debug: ''
 ################################################################################
-zabbix.url : 'http://mv-app-zbx/'
-zabbix.user : 'netbox'
-zabbix.password : '&mw%8Z=RpiF#Vs5N'
+zabbix.url : 'http://*/'
+zabbix.user : ''
+zabbix.password : ''
 debug: 0
-
+# Edit roles according to your network. These roles are used to assign templates
 processed_roles:
   - router
   - switch
   - switch_layer_3
-  - router_dzr
-  - switch_dzr
-  - switch_smb
-  - switch_smb_cod
   - switch_cod
   - wlc
   - ap
@@ -86,167 +77,23 @@ template:
         - Cisco Switch Datacenter
     switch:
         - Cisco Switch Office
-    switch_dzr:
-        - Cisco Switch Office
-    switch_smb:
-        - Cisco Switch SMB Office
     switch_smb_cod:
         - Cisco Switch SMB Datacenter
     wlc:
         - Cisco WLC
     ap:
         - Simple ICMP
-
+#group: site: role - zabbix devices group
 group:
   N6:
     router:
-        - Contact Center
+        - group name
     switch:
-        - Contact Center
+        - group name2
     switch_layer_3:
-        - Contact Center
-    switch_smb:
-        - Contact Center
-    router_dzr:
-        - Contact Center
-        - IT security
-    switch_dzr:
-        - Contact Center
-        - IT security
+        - group name
   ELS:
     router:
-        - Московский пр.139
+        - group name5
     switch:
-        - Московский пр.139
-    switch_layer_3:
-        - Московский пр.139
-    router_dzr:
-        - Московский пр.139
-        - IT security
-    switch_dzr:
-        - Московский пр.139
-        - IT security
-    wlc:
-        - Московский пр.139
-        - Wi-Fi
-    ap:
-        - Московский пр.139
-        - Wi-Fi
-  GOD:
-    router:
-        - ЦОД Годовикова
-    switch:
-        - ЦОД Годовикова
-    switch_layer_3:
-        - ЦОД Годовикова
-    router_dzr:
-        - ЦОД Годовикова
-        - IT security
-    switch_dzr:
-        - ЦОД Годовикова
-        - IT security
-    switch_cod:
-        - ЦОД Годовикова
-  IRK:
-    router:
-        - Иркутск Селитбенный пр-д.3a
-    switch:
-        - Иркутск Селитбенный пр-д.3a
-    switch_layer_3:
-        - Иркутск Селитбенный пр-д.3a
-    router_dzr:
-        - Иркутск Селитбенный пр-д.3a
-        - IT security
-    switch_dzr:
-        - Иркутск Селитбенный пр-д.3a
-        - IT security
-    switch_cod:
-        - Иркутск Селитбенный пр-д.3a
-  MIR:
-    router:
-        - ЦОД Miran
-    switch:
-        - ЦОД Miran
-    switch_layer_3:
-        - ЦОД Miran
-    router_dzr:
-        - ЦОД Miran
-        - IT security
-    switch_dzr:
-        - ЦОД Miran
-        - IT security
-  MSKIX:
-    router:
-        - M9 MSK-IX
-    switch:
-        - M9 MSK-IX
-    switch_layer_3:
-        - M9 MSK-IX
-    switch_smb:
-        - M9 MSK-IX
-    switch_smb_cod:
-        - M9 MSK-IX
-    router_dzr:
-        - M9 MSK-IX
-        - IT security
-    switch_dzr:
-        - M9 MSK-IX
-        - IT security
-  REN:
-    router:
-        - Рентгена 5а
-    switch:
-        - Рентгена 5а
-    switch_layer_3:
-        - Рентгена 5а
-    router_dzr:
-        - Рентгена 5а
-        - IT security
-    switch_dzr:
-        - Рентгена 5а
-        - IT security
-    switch_cod:
-        - Рентгена 5а
-    switch_smb:
-        - Рентгена 5а
-    wlc:
-        - Рентгена 5а
-        - Wi-Fi
-    ap:
-        - Рентгена 5а
-        - Wi-Fi
-  SEL:
-    router:
-        - ЦОД Selectel
-    switch:
-        - ЦОД Selectel
-    switch_layer_3:
-        - ЦОД Selectel
-    router_dzr:
-        - ЦОД Selectel
-        - IT security
-    switch_dzr:
-        - ЦОД Selectel
-        - IT security
-    switch_cod:
-        - ЦОД Selectel
-  SKL:
-    router:
-        - ЦКС Сколково
-    switch:
-        - ЦКС Сколково
-    switch_layer_3:
-        - ЦКС Сколково
-    router_dzr:
-        - ЦКС Сколково
-        - IT security
-    switch_dzr:
-        - ЦКС Сколково
-        - IT security
-    switch_cod:
-        - ЦКС Сколково
-  GSLAB:
-    router:
-        - GSLAB
-    switch:
-        - GSLAB
+        - group name...
