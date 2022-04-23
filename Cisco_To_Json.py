@@ -1,4 +1,4 @@
-# Script works fine with IOS, NX-OS, XR, SG-220, SG-350, Air-OS.
+# Script works fine with IOS, NX-OS, XR, SG-220, Air-OS.
 # Caution! Script might fail trying to connect to some devices ,especially when connecting to more than 10 devices simultaneously in a thread.
 # This script worked fine and was tested in one Enterprise network environment only, and some templates were edited to work in that environment.
 
