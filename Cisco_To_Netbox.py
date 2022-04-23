@@ -141,7 +141,7 @@ def create_or_update_device(device_api_file_name):
         #
         site = nb.dcim.sites.get(name=device['SITE'])
         if site is None:
-            site = nb.dcim.sites.gcreate(name=device['SITE'], slug=device['SITE'])
+            site = nb.dcim.sites.create(name=device['SITE'], slug=device['SITE'])
         # Platform
         platform = nb.dcim.platforms.get(name=device['DEVICE_PLATFORM'])
         if platform is None:
