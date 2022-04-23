@@ -114,8 +114,8 @@ for role in config['processed_roles']:
                                          })
 
             else:
-                logger.debug(device[0] + ' (' + device[1]['ip'] + ')' + ': Existing => Update [DRY RUN]')
-                print(device[0] + ' (' + device[1]['ip'] + ')' + ': Existing => Update [DRY RUN]')
+                logger.debug(device[0] + ' (' + device[1]['ip'] + ')' + ': Existing => Update')
+                print(device[0] + ' (' + device[1]['ip'] + ')' + ': Existing => Update')
         else:
             if config['debug'] == 0:
                 host_id = zapi.host.create({
@@ -131,8 +131,8 @@ for role in config['processed_roles']:
                 logger.info(device[0] + ' (' + device[1]['ip'] + ')' + ': Not existing => Create')
                 print(device[0] + ' (' + device[1]['ip'] + ')' + ': Not existing => Create')
             else:
-                logger.debug(device[0] + ' (' + device[1]['ip'] + ')' + ': Not existing => Create [DRY RUN]')
-                print(device[0] + ' (' + device[1]['ip'] + ')' + ': Not existing => Create [DRY RUN]')
+                logger.debug(device[0] + ' (' + device[1]['ip'] + ')' + ': Not existing => Create')
+                print(device[0] + ' (' + device[1]['ip'] + ')' + ': Not existing => Create')
 
 logger.info('=== End ' + time.asctime() + ' ===')
 print('=== End ' + time.asctime() + ' ===')
