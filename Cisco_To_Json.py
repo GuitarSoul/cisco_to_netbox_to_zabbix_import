@@ -410,15 +410,18 @@ def parse_output_textfsm(list_of_command_output, dic_index):
                             device_parsed_output = [header] + result
                         parse_check_list.append(f'{device["ip"]}: Template {template} +')
                     except(FileNotFoundError):
-                        print('\n', str(f'SOMETHING WENT WRONG PARSING "{output_cmd}" FOR DEVICE {device["ip"]}').center(200, '-'))
+                        print('\n', str(f'SOMETHING WENT WRONG PARSING "{output_cmd}" FOR DEVICE {device["ip"]}').center(200, '!'))
                         device_parsed_output = None
                     # Saving raw parsed output to file just in case
-                    with open('Devices_Files/' + device['hostname'] + '.txt', 'a') as raw_parsed_output:
-                        raw_parsed_output.writelines('\n')
-                        raw_parsed_output.writelines(str(f'Parsed output of command: "{output_cmd}" for device "{device["ip"]}"').center(200, '-'))
-                        raw_parsed_output.writelines('\n')
-                        raw_parsed_output.writelines(tabulate(device_parsed_output, headers='firstrow', tablefmt='grid'))
-                        raw_parsed_output.writelines('\n')
+                    try:
+                        with open('Devices_Files/' + device['hostname'] + '.txt', 'a') as raw_parsed_output:
+                            raw_parsed_output.writelines('\n')
+                            raw_parsed_output.writelines(str(f'Parsed output of command: "{output_cmd}" for device "{device["ip"]}"').center(200, '-'))
+                            raw_parsed_output.writelines('\n')
+                            raw_parsed_output.writelines(tabulate(device_parsed_output, headers='firstrow', tablefmt='grid'))
+                            raw_parsed_output.writelines('\n')
+                    except:
+                        print('FAILED TO CREATE A TEXT FILE. DOES THE DIRECTORY "Devices_Files" EXIST IN THE SCRIPT FOLDER?'.center(200, '!'))
                     return device_parsed_output
 
                 device_parsed_output = template_parse()
