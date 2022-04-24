@@ -27,6 +27,7 @@ To run the script once a day in a background just add this line to crontab file:
 Attention:
   - Script Cisco_To_Netbox uses custom fields, you must add these fields to write acl information
   - IMPORTANT! Devices are associated with sites by their hostname. Hostname MUST include a site_name. For example 78-SITE_NAME-ASW01. 78 - is a city code.
+  - For Cisco ASR edit  chars = ['RP/0/RSP0/CPU0:', '>', '#'] variable in Cisco_To_json.py according to your asr devices hostnames to cut theese chars off 
 
   ![image](https://user-images.githubusercontent.com/101651215/158596859-1df20062-a851-470a-849b-b1173ac6cb15.png)
   
