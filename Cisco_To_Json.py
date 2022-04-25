@@ -369,9 +369,12 @@ def send_command_and_get_output(list_dic_devices, command, limit=limit):
     # We run connection in parallel threads
     devices_with_output = []
     result = send_commands_threads(command_to_send, list_dic_devices, limit=limit)
-    for item in result:
-        if item['output'] is not None:
-            devices_with_output.append(item)
+    if result:
+        for item in result:
+            if item:
+                if 'output' in item:
+                    if item['output']:
+                        devices_with_output.append(item)
     return True, devices_with_output
 
 
