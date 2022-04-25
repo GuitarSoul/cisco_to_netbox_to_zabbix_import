@@ -354,7 +354,7 @@ def send_command_and_get_output(list_dic_devices, command, limit=limit):
                     except:
                         return {'ip': dic_device['ip'], 'output': None, 'device_type': dic_device['device_type']}
             else:
-                print(f"NETMIKO OR PARAMIKO FAILED TO DETERMINE DEVICE TYPE FOR DEVICE {device['ip']}".center(200, '!'))
+                print(f"NETMIKO OR PARAMIKO FAILED TO DETERMINE DEVICE TYPE FOR DEVICE {dic_device['ip']}".center(200, '!'))
 
     def send_commands_threads(command_for_device, list_dic_devices, limit=limit):
 
