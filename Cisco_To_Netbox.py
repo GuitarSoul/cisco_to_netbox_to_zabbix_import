@@ -384,15 +384,17 @@ def create_or_update_device(device_api_file_name):
                     prefix_get = nb.ipam.prefixes.get(prefix=prefix, vrf_id=vrf_id, site_id=site.id)
                     try:
                         dot1q_sub_interface_search = re.search('^\S+\.(\d+)$', ip_get.assigned_object.name)
-                        dot1q_sub_interface = dot1q_sub_interface_search.group(1)
+                        dot1q_sub_interface = dot1q_sub_interface_search.group(0)
+                        dot1q_sub_interface_vlan = dot1q_sub_interface_search.group(1)
                     except:
                         dot1q_sub_interface = 'NONE'
+                        dot1q_sub_interface_vlan = 'NONE'
                         pass
                     if prefix_get:
-                        if ('Vlan' in ip_get.assigned_object.name or dot1q_sub_interface_search.group(0) in ip_get.assigned_object.name) and ('ASW' not in ip_get.assigned_object.device.name):
+                        if ('Vlan' in ip_get.assigned_object.name or dot1q_sub_interface in ip_get.assigned_object.name) and ('ASW' not in ip_get.assigned_object.device.name):
                             description_devices = str(' ----- [Devices] : "' + ip_get.assigned_object.device.name + '"')
                             if dot1q_sub_interface != 'NONE':
-                                description_vlan = f'[VLAN] : "Vlan{dot1q_sub_interface}"'
+                                description_vlan = f'[VLAN] : "Vlan{dot1q_sub_interface_vlan}"'
                             else:
                                 description_vlan = str('[VLAN] : "' + ip_get.assigned_object.name + '"')
                             if '[Devices]' not in prefix_get.description:
