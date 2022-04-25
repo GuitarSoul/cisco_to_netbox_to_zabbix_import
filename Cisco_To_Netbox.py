@@ -407,6 +407,18 @@ def create_or_update_device(device_api_file_name):
                                     if "{'description': ['Ensure this field has no more than 200 characters.']}" in error_string:
                                         prefix_get.description = prefix_get.description.replace(str('"' + ip_get.assigned_object.device.name + '"'), '')
                                         pass
+                        else:
+                            description_devices = str('[Devices] : "' + ip_get.assigned_object.device.name + ' ----- ' + ip_get.assigned_object.name + '"')
+                            if '[Devices]' not in prefix_get.description:
+                                prefix_get.update({'description': description_devices})
+                            elif '[Devices]' in prefix_get.description and ip_get.assigned_object.device.name not in prefix_get.description:
+                                try:
+                                    prefix_get.update({'description': prefix_get.description + ' , "' + ip_get.assigned_object.device.name + ' ----- ' + ip_get.assigned_object.name + '"'})
+                                except Exception as error:
+                                    error_string = str(error)
+                                    if "{'description': ['Ensure this field has no more than 200 characters.']}" in error_string:
+                                        prefix_get.description = prefix_get.description.replace(str('"' + ip_get.assigned_object.device.name + '"'), '')
+                                        pass
                         print(str(time.asctime() + '  ' + 'Existing Prefix ' + prefix + ' in VRF "' + netbox_vrf_name + '" Within Site "' + site.name + '" is Updated').center(200, '-'))
                     else:
                         if vrf_id == 'null':
