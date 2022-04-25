@@ -50,3 +50,4 @@ Create all needed folders first
 ![image](https://user-images.githubusercontent.com/101651215/165098414-bdd17a5f-e774-4217-8d17-20ae9a8d5cca.png)
 
 
+![Снимок](https://user-images.githubusercontent.com/101651215/165099884-ac971cd7-8e52-429e-8aaf-898315773818.JPG)
