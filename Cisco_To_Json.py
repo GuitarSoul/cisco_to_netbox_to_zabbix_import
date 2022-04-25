@@ -158,7 +158,7 @@ def send_command_and_get_output(list_dic_devices, command, limit=limit):
                             return result, auth_failed_flag
                     else:
                         if prompt == 1:
-                            interact.expect('.*#')
+                            #interact.expect('.*#')
                             interact.send('show version')
                             interact.expect('.*#')
                             result = interact.current_output
