@@ -297,9 +297,9 @@ def create_or_update_device(device_api_file_name):
                             if not nb.ipam.vlans.get(vid=vlan_id, name=vlan_name, site_id=site.id):
                                 nb.ipam.vlans.create(vid=vlan_id, name=vlan_name, site=site.id)
                                 print(str(time.asctime() + '  ' + 'VLAN "' + vlan_name + '" within SITE "' + v['site'] + '" is Created.').center(200, '-'))
+                            interface_get.update({'untagged_vlan': nb.ipam.vlans.get(vid=vlan_id, name=vlan_name, site_id=site.id)})
+                            print(f'{time.asctime()} Access Vlan Updated on "{interface_get.name}" Device "{device_get.name}"'.center(200, '-'))
                             break
-                    interface_get.update({'untagged_vlan': nb.ipam.vlans.get(vid=vlan_id, name=vlan_name, site_id=site.id)})
-                    print(f'{time.asctime()} Access Vlan Updated on "{interface_get.name}" Device "{device_get.name}"'.center(200, '-'))
 
     def etherchannel_setup():
         shortcuts = {'Gi': 'GigabitEthernet', 'Fa': 'FastEthernet', 'Twe': 'TwentyFiveGigE', 'Tw': 'TwoGigabitEthernet', 'Te': 'TenGigabitEthernet', 'Po': 'ort-channel', 'Eth': 'Ethernet',
