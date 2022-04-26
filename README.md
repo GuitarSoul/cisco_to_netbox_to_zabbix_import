@@ -28,7 +28,8 @@ Attention:
   - Script Cisco_To_Netbox uses custom fields, you must add these fields to write acl information
   - IMPORTANT! Devices are associated with sites by their hostname. Hostname MUST include a site_name. For example 78-SITE_NAME-ASW01. 78 - is a city code.
   - For Cisco ASR edit  chars = ['RP/0/RSP0/CPU0:', '>', '#'] variable in Cisco_To_json.py according to your asr devices hostnames to cut theese chars off 
-
+  - Highly recommended to include "router" and "switch_layer_3" to device_role list in Netbox, this is a cryteria by which script adds description to prefixes
+  
   ![image](https://user-images.githubusercontent.com/101651215/158596859-1df20062-a851-470a-849b-b1173ac6cb15.png)
   
   - Script might fail trying to connect to some devices ,especially when connecting to more than 20 devices simultaneously in a thread.
