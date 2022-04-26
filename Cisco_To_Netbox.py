@@ -563,15 +563,25 @@ def create_or_update_device(device_api_file_name):
                 wlan_group = nb.wireless.wireless_lan_groups.get(name=site.name)
                 wlan_interface = nb.dcim.interfaces.get(name=wlan['INTERFACE'], device_id=device_get.id)
                 wlan_interface_ip = nb.ipam.ip_addresses.get(interface_id=wlan_interface.id)
-                wlan_prefix = nb.ipam.prefixes.get(q=wlan_interface_ip.address, site_id=site.id, vrf='null')
-                wlan_vlan = wlan_prefix.vlan
                 wlan_get = nb.wireless.wireless_lans.get(ssid=wlan['SSID'], group_id=wlan_group.id)
                 if not wlan_get:
-                    wlan_get = nb.wireless.wireless_lans.create(ssid=wlan['SSID'], group=wlan_group.id, vlan=wlan_vlan.id)
-                    print(str(time.asctime() + '  ' + 'New SSID ' + wlan['SSID'] + ' on Controller ' + device_get.name + ' is Created').center(200, '-'))
+                    try:
+                        wlan_prefix = nb.ipam.prefixes.get(q=wlan_interface_ip.address, site_id=site.id, vrf='null')
+                        wlan_vlan = wlan_prefix.vlan
+                        wlan_get = nb.wireless.wireless_lans.create(ssid=wlan['SSID'], group=wlan_group.id, vlan=wlan_vlan.id)
+                        print(str(time.asctime() + '  ' + 'New SSID ' + wlan['SSID'] + ' on Controller ' + device_get.name + ' is Created').center(200, '-'))
+                    except:
+                        print(str(time.asctime() + '  ' + 'Sometging Went Wrong Creating New SSID ' + wlan['SSID'] + ' on Controller ' + device_get.name).center(200, '-'))
+                        pass
                 else:
-                    wlan_get.update({'group': wlan_group.id, 'vlan': wlan_vlan.id})
-                    print(str(time.asctime() + '  ' + 'SSID ' + wlan['SSID'] + ' on Controller ' + device_get.name + ' is Updated').center(200, '-'))
+                    try:
+                        wlan_prefix = nb.ipam.prefixes.get(q=wlan_interface_ip.address, site_id=site.id, vrf='null')
+                        wlan_vlan = wlan_prefix.vlan
+                        wlan_get.update({'group': wlan_group.id, 'vlan': wlan_vlan.id})
+                        print(str(time.asctime() + '  ' + 'SSID ' + wlan['SSID'] + ' on Controller ' + device_get.name + ' is Updated').center(200, '-'))
+                    except:
+                        print(str(time.asctime() + '  ' + 'Sometging Went Wrong Updating Existing SSID ' + wlan['SSID'] + ' on Controller ' + device_get.name).center(200, '-'))
+                        pass
         if 'AP' in device:
             if device['AP']:
                 for ap in device['AP']:
