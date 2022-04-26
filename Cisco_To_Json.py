@@ -763,7 +763,8 @@ def parse_output_textfsm(list_of_command_output, dic_index):
                                           'ACTIVE_IP': virtual_interface['ACTIVE'],
                                           'STANDBY_IP': virtual_interface['STANDBY']}
                             virtual_ip_list.append(virtual_ip)
-                            parse_check_list.append(f'{device["ip"]}: hsrp +')
+                        parse_check_list.append(f'{device["ip"]}: hsrp +')
+                        if virtual_ip_list:
                             return virtual_ip_list
                 except:
                     print('SOMETHING WENT WRONG PARSING HSRP DATA'.center(200, '!'))
