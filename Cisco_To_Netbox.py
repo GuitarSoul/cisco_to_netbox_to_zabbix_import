@@ -391,7 +391,7 @@ def create_or_update_device(device_api_file_name):
                         dot1q_sub_interface_vlan = 'NONE'
                         pass
                     if prefix_get:
-                        if ('Vlan' in ip_get.assigned_object.name or dot1q_sub_interface in ip_get.assigned_object.name) and ('ASW' not in ip_get.assigned_object.device.name):
+                        if ('Vlan' in ip_get.assigned_object.name or dot1q_sub_interface in ip_get.assigned_object.name) and (device_role.name == 'switch_layer_3' or device_role.name == 'router'):
                             description_devices = str(' ----- [Devices] : "' + ip_get.assigned_object.device.name + '"')
                             if dot1q_sub_interface != 'NONE':
                                 description_vlan = f'[VLAN] : "Vlan{dot1q_sub_interface_vlan}"'
@@ -407,7 +407,7 @@ def create_or_update_device(device_api_file_name):
                                     if "{'description': ['Ensure this field has no more than 200 characters.']}" in error_string:
                                         prefix_get.description = prefix_get.description.replace(str('"' + ip_get.assigned_object.device.name + '"'), '')
                                         pass
-                        else:
+                        elif 'Vlan' not in ip_get.assigned_object.name or dot1q_sub_interface in ip_get.assigned_object.name:
                             description_devices = str('[Devices] : "' + ip_get.assigned_object.device.name + ' ----- ' + ip_get.assigned_object.name + '"')
                             if '[Devices]' not in prefix_get.description:
                                 prefix_get.update({'description': description_devices})
@@ -423,7 +423,7 @@ def create_or_update_device(device_api_file_name):
                     else:
                         if vrf_id == 'null':
                             vrf_id = None
-                        if 'Vlan' in ip_get.assigned_object.name and 'ASW' not in ip_get.assigned_object.device.name:
+                        if 'Vlan' in ip_get.assigned_object.name and (device_role.name == 'switch_layer_3' or device_role.name == 'router'):
                             description_vlan = str('[VLAN] : "' + ip_get.assigned_object.name + '"')
                             description_devices = str(' ----- [Devices] : "' + ip_get.assigned_object.device.name + '"')
                             prefix_get = nb.ipam.prefixes.create(prefix=prefix, is_pool=False, vrf=vrf_id, site=site.id, status='active', description=description_vlan + description_devices)
