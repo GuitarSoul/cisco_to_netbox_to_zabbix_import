@@ -59,7 +59,7 @@ for role in config['processed_roles']:
     zabbix_array = []
 
     # Get NetBox Device list
-    devices_of_netbox = netbox.dcim.devices.filter(role=role, status='active')
+    devices_of_netbox = netbox.dcim.devices.filter(role=role)
     for device in devices_of_netbox:
         device = dict(device)
 
